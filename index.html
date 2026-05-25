@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav id="home">
+        <h1 class="nav-heading">
+            <span>Ghulam</span> Mustafa <sup style="font-size: 1.2rem;">®</sup>
+        </h1>
+        <div class="menu-button" id="menu-button">
+            ☰
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li class="nav-li"><a href="#home" class="nav-item">Home</a></li>
+            <li class="nav-li"><a href="#about" class="nav-item">About</a></li>
+            <li class="nav-li"><a href="#portfolio" class="nav-item">Portfolio</a></li>
+            <li class="nav-li"><a href="#contact" class="nav-item">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="header">
+        <div class="header-text">
+            <h1>Hi, I'm <span><em>Qazi Ghulam Mustafa</em></span></h1>
+            <p> Passionate Web Developer and Data Science student focused on building modern web applications and
+                exploring the power of data, AI, and machine learning..</p>
+        </div>
+        <div class="header-img">
+            <img src="./HeroImg.png" alt="">
+        </div>
+    </section>
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./aboutImg-removebg-preview.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="about-text">About Me</h1>
+                    <p>I am a passionate web developer and data science student with a strong foundation in both
+                        frontend and backend technologies. I enjoy creating innovative solutions and staying up-to-date
+                        with the latest industry trends.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-links" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Html 5</span></li>
+                            <li><span>CSS 3</span></li>
+                            <li><span>JavaScript</span></li>
+                            <li><span>React</span></li>
+                            <li><span>Python</span></li>
+                            <li><span>Java</span></li>
+                            <li><span>SQL</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2026</span><br> 1 month Internship As a Frontend Developer at Code Alpha </li>
+                            <li><span>2026</span><br> 1 month Internship As a Frontend Developer at Syntecxhub </li>
+                            <br>
+                            <li><span>Self-Directed & Academic Work | 2025 – Present</span>
+                            <li>⁕ Built responsive web pages using HTML5, CSS3, and JavaScript </li>
+                            <li>⁕ Developed UI components such as navigation bars, forms, and modals</li>
+                            <li>⁕ Implemented mobile-first design and cross-browser compatibility </li>
+                            <li>⁕ Used Flexbox, Grid, and basic animations for layout and interactivity </li>
+                            <li>⁕ Practiced clean code structure and reusable
+                                components</li>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2025-2029</span> <br>UnderGraduate BS Data Science Student in
+                                Government College University Hyderabad </li>
+                            <li><span>2025-2027</span><br>
+                                Persuing a Diploma in Web Development</li>
+                            </li>
+                            <li><span>2024</span> <br> HSC From The Smart’s College ( BISE HYDERABAD)
+                            </li>
+                            <li><span>2022</span><br> SSC From Army Public School ( BISE HYDERABAD)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
