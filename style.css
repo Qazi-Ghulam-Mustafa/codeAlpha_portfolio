@@ -136,6 +136,11 @@ nav {
 }
 
 /* =============About Section ============ */
+.container {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
 
 #about {
     padding: 80px 0px;
@@ -156,7 +161,8 @@ nav {
 }
 
 .about-col-1 img {
-    width: 80%;
+    width: 340px;
+    height: 400px;
     border-radius: 35px;
 }
 
@@ -207,11 +213,103 @@ nav {
 .tab-contents ul li span {
     color: rgb(251, 93, 93);
 }
-.tab-contents{
+
+.tab-contents {
     display: none;
 }
-.tab-contents.active-tab{
+
+.tab-contents.active-tab {
     display: block;
+}
+
+/* ================== Services ================== */
+#services {
+    padding: 30px 0px;
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.services-list div {
+    background: #262626;
+    padding: 40px;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(255, 179, 187, 0.2);
+    transition: background 0.5s, transform 0.5s;
+}
+
+.services-list div i {
+    font-size: 50pz;
+    margin-bottom: 20px;
+}
+
+.services-list div h2 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.services-list div a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.services-list div:hover {
+    background: #ff0151;
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px rgba(255, 0, 79, 0.4);
+}
+
+/* ========== Portfolio ========== */
+#portfolio {
+    padding: 30px 0px;
+}
+
+.work-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.work {
+    border-radius:12px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work img {
+    width: 400px;
+    height: 250px;
+    display: block;
+    border-radius: 12px;
+}
+
+.layer {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 40px;
+    text-align: center;
+    opacity: 0;
 }
 
 /* ================= RESPONSIVE ================= */

@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <!-- Navbar -->
-    <nav id="home">
+    <nav>
         <h1 class="nav-heading">
             <span>Ghulam</span> Mustafa <sup style="font-size: 1.2rem;">®</sup>
         </h1>
@@ -21,20 +22,21 @@
         <ul class="nav-links" id="nav-links">
             <li class="nav-li"><a href="#home" class="nav-item">Home</a></li>
             <li class="nav-li"><a href="#about" class="nav-item">About</a></li>
+            <li class="nav-li"><a href="#services" class="nav-item">Services</a></li>
             <li class="nav-li"><a href="#portfolio" class="nav-item">Portfolio</a></li>
             <li class="nav-li"><a href="#contact" class="nav-item">Contact</a></li>
         </ul>
     </nav>
 
     <!-- Hero Section -->
-    <section id="header">
+    <section id="header" id="home">
         <div class="header-text">
             <h1>Hi, I'm <span><em>Qazi Ghulam Mustafa</em></span></h1>
             <p> Passionate Web Developer and Data Science student focused on building modern web applications and
                 exploring the power of data, AI, and machine learning..</p>
         </div>
         <div class="header-img">
-            <img src="./HeroImg.png" alt="">
+            <img src="./img/HeroImg.png" alt="">
         </div>
     </section>
     <!-- About Section -->
@@ -42,7 +44,7 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="./aboutImg-removebg-preview.png" alt="">
+                    <img src="./img/About2.png" alt="">
                 </div>
                 <div class="about-col-2">
                     <h1 class="about-text">About Me</h1>
@@ -50,9 +52,9 @@
                         frontend and backend technologies. I enjoy creating innovative solutions and staying up-to-date
                         with the latest industry trends.</p>
                     <div class="tab-titles">
-                        <p class="tab-links active-links" onclick="openTab('skills')">Skills</p>
-                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
-                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                        <p class="tab-links active-links" onclick="openTab('skills' ,event)">Skills</p>
+                        <p class="tab-links" onclick="openTab('experience',event)">Experience</p>
+                        <p class="tab-links" onclick="openTab('education',event)">Education</p>
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
@@ -85,7 +87,7 @@
                             <li><span>2025-2029</span> <br>UnderGraduate BS Data Science Student in
                                 Government College University Hyderabad </li>
                             <li><span>2025-2027</span><br>
-                                Persuing a Diploma in Web Development</li>
+                                Persuing a Diploma in Web Development (Mern Stack)</li>
                             </li>
                             <li><span>2024</span> <br> HSC From The Smart’s College ( BISE HYDERABAD)
                             </li>
@@ -93,6 +95,127 @@
                         </ul>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services -->
+    <div id="services">
+        <div class="container">
+            <div class="sub-title">
+                <h1>My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <h2>Web Design <i class='bx bx-crop'></i></h2>
+                        <p>Creating visually appealing and user-friendly websites with a focus on responsive design and
+                            modern aesthetics.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <h2>Web Development <i class='bx bx-code-alt'></i></h2>
+                        <p>Building dynamic and interactive websites using modern web technologies and frameworks.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <h2>Amazon VA <i class='bx bxl-amazon'></i> </h2>
+                        <p>Providing virtual assistance for Amazon business operations, including product listing
+                            management and customer service.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <div class="sub-title">
+                <h1>My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <a href="https://priceoyeclone.netlify.app/"> <img
+                                    src="./img/PriceOyeClone.png" alt=""></a>
+                        <div class="layer"> 
+                            <h3 class="work-discription">Priceoye CLone</h3>
+                            <p>A responsive clone of the Priceoye website, built with HTML, CSS</p>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <a href="https://weatherapp-gmtechwaresolutions.netlify.app/"><img
+                                    src="./img/Weather App.png" alt=""></a>
+                        <div class="layer"> 
+                            <h3 class="work-discription">Weather App</h3>
+                            <p>A responsive weather application built with modern web technologies.</p>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <a href="https://islamclock360.netlify.app/"> <img src="./img/Salah Time.png"
+                                    alt=""></a>
+                        <div class="layer">
+                            <h3 class="work-discription">Islam Clock 360</h3>
+                            <p>A responsive Islamic clock application with Salah, Iftar & Sehar times.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-list">
+                    <div class="work">
+                        <a href="https://quizcore.netlify.app/"> <img src="./img/QuizApp.png" alt=""></a>
+                        <div class="layer">
+                            <h3 class="work-discription">Quiz App</h3>
+                            <p>A responsive quiz application built with modern web technologies.</p>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <a href="https://modeflip.netlify.app/"><img src="./img/ModeFlip.png"
+                                    alt=""></a>
+                        <div class="layer"> 
+                            <h3 class="work-discription">Mode Flip</h3>
+                            <p>A responsive Dark & Light mode toggle application.</p>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <a href="https://syntecxhub-faq-accordian.netlify.app/">
+                            <img src="./img/Faq.png" alt=""></a>
+                        <div class="layer">
+                            <h3 class="work-discription">FAQ Accordian</h3>
+                            <p>A responsive FAQ accordian application built with modern web technologies.</p>
+                            <a href=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-list">
+                    <div class="work">
+                        <a href="https://quickdigitcalculator.netlify.app/">
+                                <img src="./img/calculator.png" alt="">  </a>
+                        <div class="layer"> 
+                            <h3 class="work-discription">Calculator App</h3>
+                            <p>A responsive calculator application Built with Html, css and Js and Using Math Method Of
+                                JavaScript</p>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <a href="https://cnic-generator.netlify.app/">
+                                <img src="./img/Cnic Generator.png" alt="">
+                            </a>
+                        <div class="layer"> 
+                            <h3 class="work-discription">CNIC Generator</h3>
+                            <p>A responsive CNIC generator application built with modern web technologies. This App Is
+                                Buit
+                                for Generating Random CNIC Numbers</p>
+                        </div>
+                    </div>
+                    <div class="work">
+                         <a href="https://image-gallary-webapp.netlify.app">
+                                <img src="./img/Image Gallery.png" alt="">
+                            </a>
+                        <div class="layer">
+                            <h3 class="work-discription">Image Gallery</h3>
+                            <p>A responsive image gallery application built with modern web technologies.</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
