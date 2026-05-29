@@ -22,3 +22,4 @@ function openTab(tabName, event) {
     // Show selected tab content
     document.getElementById(tabName).classList.add("active-tab")
 }
+
